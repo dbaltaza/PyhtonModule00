@@ -1,10 +1,7 @@
 
-from typing import Optional
-
-
-def ft_count_harvest_recursive(i: int = 1, days: Optional[int] = None) -> None:
+def ft_count_harvest_recursive(i: int = 1, days: int = -1) -> None:
     """Count down to harvest using recursion."""
-    if days is None:
+    if days == -1:
         days = int(input("Days until harvest: "))
     if i < days + 1:
         print("Day", i)
